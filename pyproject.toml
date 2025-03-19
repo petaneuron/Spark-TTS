@@ -7,7 +7,7 @@ requires-python = ">=3.10,<3.12"
 dependencies = [
     "einops==0.8.1",
     "einx==0.3.0",
-    "gradio==5.18.0",
+    "gradio==4.24.0",
     "numpy==1.23.4",
     "omegaconf==2.3.0",
     "packaging==24.2",
