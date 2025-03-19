@@ -80,7 +80,7 @@ cd Spark-TTS
 - Create Conda env:
 
 ``` sh
-conda create -n sparktts -y python=3.12
+conda create -n sparktts -y python=3.11
 conda activate sparktts
 pip install -r requirements.txt
 # If you are in mainland China, you can set the mirror as follows:
