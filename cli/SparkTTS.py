@@ -45,7 +45,7 @@ class SparkTTS:
 
     def _initialize_inference(self):
         """Initializes the tokenizer, model, and audio tokenizer for inference."""
-        self.tokenizer = AutoTokenizer.from_pretrained(f"{self.model_dir}/LLM")
+        self.tokenizer = AutoTokenizer.from_pretrained(f"{self.model_dir}/LLM",use_fast=False)
         self.model = AutoModelForCausalLM.from_pretrained(f"{self.model_dir}/LLM")
         self.audio_tokenizer = BiCodecTokenizer(self.model_dir, device=self.device)
         self.model.to(self.device)
