@@ -1371,8 +1371,8 @@ wheels = [
 
 [[package]]
 name = "spark-tts"
-version = "0.1.0"
-source = { virtual = "." }
+version = "0.1.1"
+source = { editable = "." }
 dependencies = [
     { name = "einops" },
     { name = "einx" },
@@ -1393,17 +1393,17 @@ dependencies = [
 requires-dist = [
     { name = "einops", specifier = "==0.8.1" },
     { name = "einx", specifier = "==0.3.0" },
-    { name = "gradio", specifier = "==5.18.0" },
-    { name = "numpy", specifier = "==2.2.3" },
+    { name = "gradio", specifier = "<=5.18.0" },
+    { name = "numpy", specifier = "<=2.2.3" },
     { name = "omegaconf", specifier = "==2.3.0" },
     { name = "packaging", specifier = "==24.2" },
     { name = "safetensors", specifier = "==0.5.2" },
     { name = "soundfile", specifier = "==0.12.1" },
     { name = "soxr", specifier = "==0.5.0.post1" },
-    { name = "torch", specifier = "==2.5.1" },
-    { name = "torchaudio", specifier = "==2.5.1" },
-    { name = "tqdm", specifier = "==4.66.5" },
-    { name = "transformers", specifier = "==4.46.2" },
+    { name = "torch", specifier = ">=2.5.1" },
+    { name = "torchaudio", specifier = ">=2.5.1" },
+    { name = "tqdm", specifier = ">=4.66.5" },
+    { name = "transformers", specifier = "<=4.46.2" },
 ]
 
 [[package]]
